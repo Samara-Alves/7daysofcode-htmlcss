@@ -93,3 +93,24 @@ padding: 0 10rem;
   font-weight: 500;
   color: #101828;
 }
+/*Seção de Talentos */
+.talents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem 0;
+  gap: 1rem;
+}
+.talents span{
+  color: var(--main-color);
+  background: rgba(142, 36, 36, 0.25);
+  padding: 0.25rem 1rem;
+  border-radius: 1rem;
+}
+.talents p{
+  color: var(--text-color);
+}
+.talents img {
+  margin-top: 2rem;
+  width: 80%;
+}
