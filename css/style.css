@@ -1,6 +1,7 @@
 :root {
   --text-color: #667085;
   --main-color: #8E2424;
+  --title-color: #101828;
 }
 
 * {
@@ -17,8 +18,9 @@
   
   nav {
     display: flex;    
-    justify-content: space-around;
-    padding: 1rem 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
   }
   
   .links a {
@@ -41,6 +43,33 @@
   button.signUp {
     background-color: var(--main-color);
     color: #FFF;
+  }
+  .sideMenu {
+    display: none;
+    visibility: hidden;
+  }
+  
+  .menu.active {
+    right: 0;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu .links a {
+    margin-bottom: 2rem;
+  }
+  
+  .sideMenu img {
+    position: relative;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
   }
   /* Cabeçalho - Primeira seção */
 
